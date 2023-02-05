@@ -3,31 +3,27 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login Page</title>
+        <title>ChoBob Login</title>
         <link href="styles.css" rel="stylesheet">
     </head>
     <body>
-        <div>
-            <header>
-                <h1>ChoBob</h1>
-            </header>
-        </div>
+        <header>
+            <h1>ChoBob</h1>
+        </header>
+        <!--Login inputs-->
         <form>
-            <!--Login fieldsets-->
-            <form>
-                <fieldset>
-                    <label>Email / Username: <input id="email-user" class="email-user" type="text" minlength="3" required></input></label>
-                </fieldset>
-                <fieldset>
-                    <label>Password: <input id="password" class="password" type="password" minlength="8" required></input></label>
-                </fieldset>
-                <fieldset>
-                    <input id="login" class="sign-in" type="submit" value="SIGN IN"/>
-                </fieldset>
-                <fieldset>
-                    <a id="forgot-password" href="https://github.com/ChoBobby" target="_blank">Forgot password?</a>
-                </fieldset>
-            </form>
+            <div>
+                <label>Email / Username: <input id="email-user" class="text-input" type="text" minlength="3" required></input></label>
+            </div>
+            <div>
+                <label>Password: <input id="password" class="text-input" type="password" minlength="8" required></input></label>
+            </div>
+            <div class="clickable">
+                <input id="sign-in" class="submit" type="submit" value="SIGN IN"/>
+            </div>
+            <div class="clickable">
+                <a id="forgot-password" class="link" href="https://github.com/ChoBobby" target="_blank">Forgot password?</a>
+            </div>
         </form>
     </body>
 </html>
